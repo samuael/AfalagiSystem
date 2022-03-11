@@ -1,0 +1,327 @@
+body{
+	background-color: white;
+
+}
+
+nav ul>li{
+	display: inline; 
+
+}
+
+nav ul a{
+	padding: 1rem;
+	color: black; 
+	text-decoration: none; 
+}
+nav ul a.active,nav ul a:active{
+	border-bottom: 2px solid blue;
+	background: rgba(0,0,0,.05);  
+}
+nav ul a:hover{
+	background: rgba(0,0,0,.1); 
+}
+
+nav>#nav{
+	padding: 1rem;
+	background: white; 
+	
+	margin: 0px; 
+}
+nav>#nav ul{
+	text-align: right;
+	display: inline-block; 
+}
+#sexy img{
+	position: absolute;
+	top: 2%;
+	left: 4%;
+}
+#sexy h1{
+	position: absolute;
+	left: 10%;
+	top: 0;
+	font-family: Ranga, cursive;
+}
+#sexy p{
+	position: absolute;
+	top: 1%;
+	left: 13%;
+	font-size: 45px;
+	color: red;
+	font-family: Ranga, cursive;
+
+}
+#container{
+	position: absolute;
+	top: 17%;
+	width: 99%;
+	height: 450px;
+
+	margin: 0 auto;
+
+}
+#container>img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+
+}
+#container>.btn{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border: none;
+	border-radius: 25px;
+	top: 200px;
+	background: black;
+	color: white;
+	font-size: 20px;
+}
+#container>.btn1:hover{
+	box-shadow: 10px 0 20px  0px black;
+
+}
+#container>.btn2:hover{
+	box-shadow: -10px 0 20px  0px black;
+
+}
+#container>#btn2{
+	position: relative;
+	float: right;
+}
+.box{
+	position: absolute;
+	top: 30%;
+	left: 8%;
+	
+	border-style: solid;
+	border-color: #5c5cd6;
+	border-width: 90px;
+	border-top-width: 60px;
+	border-left-width: 5px;
+	border-right-width: 5px;
+	border-bottom-width: 5px;
+
+}
+.box p{
+	position: absolute;
+	top: -25%;
+	left: 20%;
+	font-size: 30px;
+	color: white;
+}
+.box .boxin{
+	border-style: solid;
+	border-color: white;
+	border-width: 150px;
+	background: white;
+}
+.box .boxin #one label{
+	position:absolute;
+	top: 2%;
+	left: 3%;
+	font-size: 20px;
+
+}
+.box .boxin #one select{
+	position: absolute;
+	top: 15%;
+	left: 4%;
+	width: 40%;
+	height: 12%;
+}
+.box .boxin #two label {
+	position: absolute;
+	top: 35%;
+	left: 4%;
+	font-size: 20px;
+
+
+}
+.box .boxin  #two select {
+	position: absolute;
+	top: 45%;
+	left: 4%;
+	width: 40%;
+	height: 12%;
+
+}
+.box .boxin #three label {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	font-size: 20px;
+
+
+}
+.box .boxin  #three select {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	width: 40%;
+	height: 12%;
+
+}
+.box .boxin #four label {
+	position: absolute;
+	top: 60%;
+	left: 4%;
+	font-size: 20px;
+
+
+}
+.box .boxin  #four select {
+	position: absolute;
+	top: 70%;
+	left: 4%;
+	width: 90%;
+	height: 10%;
+
+}
+.box .boxin  #five button{
+	position: absolute;
+	top: 85%;
+	left: 10%;
+	width: 80%;
+	height: 14%;
+
+}
+.write h3{
+	position: absolute;
+	top: 110%;
+	left: 30%;
+	font-size: 60px;
+	
+	color: 	#c2c2a3;
+
+}
+.write p{
+	position: absolute;
+	top: 130%;
+	left: 20%;
+	font-size: 20px;
+
+	
+
+}
+.write #join{
+	position: absolute;
+	top: 150%;
+	left: 35%;
+	background-color: #5c5cd6;
+	width: 10%;
+	height: 10%;
+	color: white;
+	font-size: 20px;
+
+
+}
+.write #contact{
+	position: absolute;
+	top: 150%;
+	left: 50%;
+	background-color: #ff0066;
+	width: 10%;
+	height: 10%;
+	color: white;
+	font-size: 20px;
+
+
+}
+.members{
+	background-color: black;
+}
+.members p{
+	position: absolute;
+	top: 175%;
+	left: 40%;
+	font-family: cursive;
+	font-size: 30px;
+
+}
+.members #hoo{
+	position: absolute;
+	top: 180%;
+	left: 10%;
+}
+div.gallery {
+	border-radius: 50%;
+
+
+  
+  margin: 50px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  height: 180px;
+  
+}
+
+div.gallery:hover {
+
+  border: 1px solid #777;
+}
+
+div.gallery img {
+	border-radius: 50%;
+
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.footer {
+	position: absolute;
+	top: 280%;
+   
+  
+   width: 99%;
+   height: 30%;
+   background-color:#383838 ;
+   color: white;
+   
+  }
+  .cont{
+	position: absolute;
+	left: 20%;
+	
+	
+	
+}
+.btn{
+    
+    
+	padding:10px;
+
+	color: white;
+	padding-top:5;
+
+
+}
+.rightside{
+	color: white;
+	width: 100%;
+    margin-top: -130px;
+    margin-left:350px;
+	
+
+
+}
+.icon{
+    
+    float:left;
+	padding:20px;
+	text-align: center;
+	color: white;
+	padding-top:5;
+
+}
+.rightside#title{
+	text-decoration-color: white;
+
+
+}

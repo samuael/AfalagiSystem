@@ -1,0 +1,152 @@
+
+nav ul>li{
+	display: inline; 
+
+}
+
+nav ul a{
+	padding: 1rem;
+	color: black; 
+	text-decoration: none; 
+}
+nav ul a.active,nav ul a:active{
+	border-bottom: 2px solid blue;
+	background: rgba(0,0,0,.05);  
+}
+nav ul a:hover{
+	background: rgba(0,0,0,.1); 
+}
+
+nav>#nav{
+	padding: 1rem;
+	background: white; 
+	
+	margin: 0px; 
+}
+nav>#nav ul{
+	text-align: right;
+	display: inline-block; 
+}
+#sexy img{
+	position: absolute;
+	top: 2%;
+	left: 4%;
+}
+#sexy h1{
+	position: absolute;
+	left: 10%;
+	top: 0;
+	font-family: Ranga, cursive;
+}
+#sexy p{
+	position: absolute;
+	top: 1%;
+	left: 13%;
+	font-size: 45px;
+	color: red;
+	font-family: Ranga, cursive;
+
+}
+#container img{
+	position: absolute;
+	top: 17%;
+	width: 99%;
+	height: 60%;
+	border: 1px solid #8a4419;
+
+
+}
+.sami{
+	position: absolute;
+	top: 95%;
+	left: 40%;
+}
+.sami p{
+	font-family:Georgia, serif;
+
+}
+.sami img{
+	 border: 2px solid #8a4419;
+	 transition:transform 1s;
+	
+}
+.sami img:hover{
+	 transform: scale(1.2);
+
+}
+.sami button{
+	width: 100px;
+	border-radius: 12px;
+}
+.footer {
+	position: absolute;
+	top: 200%;
+   
+  
+   width: 99%;
+   height: 30%;
+   background-color:#383838 ;
+   color: white;
+   
+  }
+  .cont{
+	position: absolute;
+	left: 20%;
+	
+	
+	
+}
+#container{
+	border-radius:10%;
+	border-color: #006699;
+	border-width:2px;
+
+}
+.box{
+     position: absolute;
+	top: 77.1%;
+	
+	background-color:#f0f5f5;
+	height: 125%;
+	width: 99%;
+	
+}
+#container.slider{
+	border-radius:10px;
+	border-color: #006699;
+	border-width:2px;
+	box-shadow:10px, 10px ,10px;
+}
+.btn{
+    
+    
+	padding:10px;
+
+	color: white;
+	padding-top:5;
+
+
+}
+.rightside{
+	color: white;
+	width: 100%;
+    margin-top: -130px;
+    margin-left:350px;
+	
+
+
+}
+.icon{
+    
+    float:left;
+	padding:20px;
+	text-align: center;
+	color: white;
+	padding-top:5;
+
+}
+.rightside#title{
+	text-decoration-color: white;
+
+
+}

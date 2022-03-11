@@ -1,0 +1,189 @@
+
+*{
+    margin:0px;
+    border:0px;
+    font-weight:bold;
+    font-family:Arial;
+    
+  }
+
+
+  nav ul>li{
+	display: inline; 
+}
+
+nav ul a{
+	padding: 1rem;
+	color: black; 
+	text-decoration: none; 
+}
+nav ul a.active,nav ul a:active{
+	border-bottom: 2px solid blue;
+	background: rgba(0,0,0,.05);  
+}
+nav ul a:hover{
+	background: rgba(0,0,0,.1); 
+}
+
+nav>#nav{
+	padding: 1rem;
+	background: white; 
+	
+	margin: 0px; 
+}
+nav>#nav ul{
+	text-align: right;
+	display: inline-block; 
+}
+  
+  
+#afalagiLogo {
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    box-shadow:5px 5px 5px;
+    font-weight:bold;
+    font-family:arial;
+    text-shadow:2px 2px 2px;
+  }
+
+  h1{
+    color:#006699;
+    font-weight:bold;
+    text-shadow:2px 2px 2px;
+  }
+
+
+  /* #container {
+      width:100px;
+      height:100px;
+      box-shadow:10px 10px 10px #006688;
+      border-radius:'50%';
+  }
+  #container a {
+      width:100%;
+      height:100%;
+      
+  }
+ #changeProfile  img{
+    margin:10px;
+    width:'100%';
+    height:'100%';
+    box-shadow:10px 10px 10px;
+    border-radius:'50%';
+    border:2px solid #fff;
+  
+  }
+
+
+
+.theProfilePicture{
+    width:100px;
+    height:100px;
+    border-radius:'50%';
+    border:2px solid #fff;
+
+} */
+body{
+    background:"../images/afalagi.png";
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .navigate{
+      clear:both;
+      background:#ca8f10;
+      width:100px;
+      height:50px;
+      font-weight:bold;
+      text-shadow:3px 3px 3px;
+      box-shadow:10px 10px 10px;
+      border-radius:"50%";
+      margin:20px;
+      
+
+  }
+  
+.footer {
+	position: absolute;
+	top: 200%;
+   
+  
+   width: 99%;
+   height: 30%;
+   background-color:#383838 ;
+   color: white;
+   
+  }
+  .cont{
+	position: absolute;
+	left: 20%;
+	
+	
+	
+}
+.btn{
+    
+    
+	padding:10px;
+
+	color: white;
+	padding-top:5;
+
+
+}
+.rightside{
+	color: white;
+	width: 100%;
+    margin-top: -130px;
+    margin-left:350px;
+	
+
+
+}
+.icon{
+    
+    float:left;
+	padding:20px;
+	text-align: center;
+	color: white;
+	padding-top:5;
+
+}
+.rightside#title{
+	text-decoration-color: white;
+
+
+}
+
+.userHolder{
+    float:left;
+    margin-left:5%;
+    margin-top:30px;
+    box-shadow:10px 10px 10px;
+    text-align:center;
+    
+
+}
+.userHolder img{
+    width:100%;
+    
+}
+
+
+
+
+
+

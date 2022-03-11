@@ -1,0 +1,228 @@
+body{
+	background-color: white;
+
+}
+
+nav ul>li{
+	display: inline; 
+
+}
+
+nav ul a{
+	padding: 1rem;
+	color: black; 
+	text-decoration: none; 
+}
+nav ul a.active,nav ul a:active{
+	border-bottom: 2px solid blue;
+	background: rgba(0,0,0,.05);  
+}
+nav ul a:hover{
+	background: rgba(0,0,0,.1); 
+}
+
+nav>#nav{
+	padding: 1rem;
+	background: white; 
+	
+	margin: 0px; 
+}
+nav>#nav ul{
+	text-align: right;
+	display: inline-block; 
+}
+#first img{
+	position: absolute;
+	top: 10%;
+	width: 80%;
+	left: 10%;
+	height: 400px;
+}
+ #yello{
+	position: absolute;
+	top: 40%;
+	left: 12%;
+	width: 25%;
+	height: 40%;
+	background: #ffffcc;
+
+}
+ #whi{
+	position: absolute;
+	top: 42%;
+	left: 13%;
+	height: 36%;
+	background: white;
+	width: 23%;
+}
+#con label{
+	position:absolute;
+	top: 43%;
+	left: 14%;
+	font-size: 20px;
+
+}
+#con select{
+	position: absolute;
+	top: 48%;
+	left: 14%;
+	width: 9%;
+	height: 7%;
+	 border-radius: 4px;
+    box-sizing: border-box;
+    background:  #f5f5f0;
+}
+#ag label{
+	position:absolute;
+	top: 56%;
+	left: 14%;
+	font-size: 20px;
+
+}
+#ag select{
+	position: absolute;
+	top: 60%;
+	left: 14%;
+	width: 9%;
+	height: 7%;
+	 border-radius: 4px;
+    box-sizing: border-box;
+    background:  #f5f5f0;
+}
+#too label{
+	position:absolute;
+	top: 56%;
+	left: 24%;
+	font-size: 20px;
+
+}
+#too select{
+	position: absolute;
+	top: 60%;
+	left: 24%;
+	width: 9%;
+	height: 7%;
+	 border-radius: 4px;
+    box-sizing: border-box;
+    background:  #f5f5f0;
+}
+button{
+	position: absolute;
+	top: 70%;
+	left: 21%;
+	background: #ffff99;
+}
+#outerbox{
+	position: absolute;
+	top: 120%;
+	width: 700px;
+	overflow: hidden;
+}
+#slider{
+
+	width: 3600px;
+	position: relative;
+	animation-name: mab;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+#slider img{
+	float: left;
+}
+@keyframes mab{
+0%{
+	left: 0;
+}
+
+25%{
+	left: 0px;
+
+}
+45%{
+	left: -900px;
+}
+50%{
+	left: -900px;
+}
+70%{
+	left: -1800px;
+}
+75%{
+	left: -1800px;
+}
+95%{
+	left: -2700px;
+}
+95%{
+	left: -2700px;
+}
+100%{
+	left: -3600px;
+}
+}
+#famu p{
+	position: absolute;
+	left: 70%;
+	top: 120%;
+	font-family: fantasy;
+	font-size: 20px;
+
+} 
+#famu pre{
+	position: absolute;
+	left: 55%;
+	top: 130%;
+	font-family: cursive;
+
+} 
+.footer {
+	position: absolute;
+	top: 200%;
+   
+  
+   width: 99%;
+   height: 30%;
+   background-color:#383838 ;
+   color: white;
+   
+  }
+  .cont{
+	position: absolute;
+	left: 20%;
+	
+	
+	
+}
+.btn{
+    
+    
+	padding:10px;
+
+	color: white;
+	padding-top:5;
+
+
+}
+.rightside{
+	color: white;
+	width: 100%;
+    margin-top: -130px;
+    margin-left:350px;
+	
+
+
+}
+.icon{
+    
+    float:left;
+	padding:20px;
+	text-align: center;
+	color: white;
+	padding-top:5;
+
+}
+.rightside#title{
+	text-decoration-color: white;
+
+
+}

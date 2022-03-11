@@ -1,0 +1,198 @@
+nav ul>li{
+	display: inline; 
+
+}
+
+nav ul a{
+	padding: 1rem;
+	color: black; 
+	text-decoration: none; 
+}
+nav ul a.active,nav ul a:active{
+	border-bottom: 2px solid blue;
+	background: rgba(0,0,0,.05);  
+}
+nav ul a:hover{
+	background: rgba(0,0,0,.1); 
+}
+
+nav>#nav{
+	padding: 1rem;
+	background: white; 
+	
+	margin: 0px; 
+}
+nav>#nav ul{
+	text-align: right;
+	display: inline-block; 
+}
+
+.one{
+	background: url(../images/baa.jpg) no-repeat;
+	-webkit-background-size:cover;
+	background-size: cover;
+
+	height: 450px;
+	position: relative;
+	z-index: -1;
+
+
+
+
+}
+.one h2{
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	font-size: 30px;
+	color: white;
+}
+.one img{
+	position: absolute;
+	top: 25%;
+	left: 40%;
+}
+
+
+#list nav ul li{
+	
+	width: 200px;
+	font-family: cursive;
+	font-size: 20px;
+	
+
+	height:50px ;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	color: white;
+
+	size:19px;
+
+
+
+
+}
+#list nav ul{
+	text-align: center;
+	list-style: none;
+	
+
+
+}
+
+
+#list nav a{
+	color: rgb(1,1,1,1);
+	text-decoration: none;
+	padding: 10px;
+	width: 40px;
+	color: white;
+	
+
+}
+.one #join{
+	position: absolute;
+	top: 65%;
+	left: 8%;
+	background-color: #5c5cd6;
+	width: 9%;
+	height: 7%;
+	color: white;
+	font-size: 20px;
+
+
+}
+.one #contact{
+	position: absolute;
+	top: 65%;
+	left: 18%;
+	background-color: #ff0066;
+	width: 9%;
+	height: 7%;
+	color: white;
+	font-size: 20px;
+
+
+}
+
+
+.two h2{
+	position: absolute;
+	top: 100%;
+	left: 40%;
+}
+.three{
+	position: absolute;
+	top: 110%;
+	left: 20%;
+}
+div.img {
+    margin: 25px;
+    
+    float: left;
+    width: 180px;
+}
+
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.footer {
+	position: absolute;
+	top: 200%;
+   
+  
+   width: 99%;
+   height: 30%;
+   background-color:#383838 ;
+   color: white;
+   
+  }
+  .cont{
+	position: absolute;
+	left: 20%;
+	
+	
+	
+}
+.btn{
+    
+    
+	padding:10px;
+
+	color: white;
+	padding-top:5;
+
+
+}
+.rightside{
+	color: white;
+	width: 100%;
+    margin-top: -130px;
+    margin-left:350px;
+	
+
+
+}
+.icon{
+    
+    float:left;
+	padding:20px;
+	text-align: center;
+	color: white;
+	padding-top:5;
+
+}
+.rightside#title{
+	text-decoration-color: white;
+
+
+}

@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=" 8-utf">
+   <title>AFALAGI</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- <link rel="stylesheet" content="../jqery/jquery-3.4.1.min.js"> -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link  rel = "stylesheet" href = "../css/registor.css">
+	<link rel="icon" type="image/png" href="../icon/logo2.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Ranga&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+   <script >
+
+    $(document).ready(
+      function(){
+        $("#submitting").on("click" , registerAsynchronious());
+      }
+    )
+
+
+    function registerAsynchronious(){
+      console.log("Inside The Method.............");
+         var username =  $(".username").val();
+
+
+         var firstname=$(".firstname").val();
+         
+         var lastname = $(".lastname").val();
+         
+         var age = parseInt($(".age").val() , 10);
+         
+         var email = $(".email").val();
+         
+         var password= $(".password").val();
+         
+         var country =$(".country").val();
+         
+         var confirm = $(".confirm").val();
+         
+          var state=$(".state").val();
+          // document.getElementById("state").value;
+         
+         var phoneno =$(".phoneno").val();
+         
+         var sex ;
+         
+         var sex = $("select.sex").children("option:selected").val();
+            // .change(function(){
+            //     var sex = $(this).children("option:selected").val();
+                
+            // });
+      
+        console.log(sex);
+      //    document.getElementById("sex").value;
+      //    var position =document.getElementById("positionofapplication").value;
+         
+
+
+      //  var image =$(".image").val();
+        
+         var image = $("#images").val();
+        
+        var extension =image.split(".").pop().toLowerCase();
+
+
+        if(jQuery.inArray(extension , ["gif", "png" , "jpg" , "jpeg"])==-1){
+          $("#images").val('');
+
+          // notify.text("Please Re Enter Your Profile Pic ");
+          // notify.css("color" , "f00");
+          return;
+          
+        }
+
+        console.log("Image Is Passed");
+
+
+
+        var biography = $(".biography").val();
+        
+        var religion = $(".religion").val();
+        
+
+        var notify=$("#notify");
+
+
+        // var formdata = new FormData();
+
+      //   formdata.append("username", username);
+      //   formdata.append("firstname", firstname);
+      //   formdata.append("lastname", lastname);
+      //   formdata.append("password", password);
+      //   formdata.append("image", image);
+
+
+      //   formdata.append("country", country);
+      // formdata.append("age", age);
+      // formdata.append("email", email);
+      
+
+      //   formdata.append("sex", sex);
+      //   formdata.append("state", state);
+      //   formdata.append("religion", religion);
+      //   formdata.append("phoneno", phoneno);
+      //   formdata.append("biography", biography);
+
+
+
+        if(password !== confirm){
+           //// Have to Create a page named notify to meke the Notification ----------|||||||||||||||---------------------------
+             console.log("Doesnot pass");
+             document.getElementById("notify").innerHTML="Invalid Password Enter <br> Try Again";
+             document.getElementById("notify").style="color:#ff0000";
+             return;
+         }
+         console.log("Valid password");
+         if(username=="" || username==undefined){
+            notify.text("Invalid User Name");
+            $("#username").css("border" , "ff0000");
+            return;
+         }
+         console.log("valid user name");
+         if(password=="" || password==undefined  || confirm =="" || confirm==undefined){
+            notify.text("Invalid password Name");
+            notify.css("border" , "ff0000");
+            notify.css("border" , "ff0000");
+            return;
+         }
+         console.log("valid password and confirsm");
+
+          console.log("Befor ajax..............");
+         $.ajax({
+             
+             url:"../php/RegisterForDating.php",
+             type:"POST",
+ 
+             data:{"username":username , "firstname":firstname , "lastname":lastname ,  "password":password, 
+             "image":image, "country":country, "age":age, "email":email, "sex":sex, "state":state, "religion":religion,
+             "phoneno":phoneno, "biography":biography, "biography":biography , "confirm":confirm },
+             dataType:"JSON",
+             
+            
+              
+
+             success:function(data)
+             {
+
+              //document.getElementById("response").innerHTML = res;
+               console.log("Ajax Response Is Recieved ......"+data.result);
+               if(data.result=="yes"  )
+               {
+
+                   console.log('ajax message Recieved .... Yes');
+                   $("#notify").text(data.message);
+                   $("#notify").css("color" , "#00ff00");
+
+
+                   $("#username").text(data.email);
+                   $("#password").text(data.password);
+ 
+               }
+               else{
+                 console.log('ajax message recieved ...........   No ');
+                 $("#notify").text("Registration Failed......." .data.message);
+                   $("#notify").css("color" , "#ff0000");
+ 
+               }
+ 
+             },
+             error:function(){
+               console.log("Error");
+             }
+           }
+         )
+           console.log("Ajax request is sent.");
+        }
+ </script>
+
+
+
+
+
+<script>
+  function logIn(){
+    var email=$(".inputemail").val();
+    var password =$(".inputpassword").val();
+
+    $.ajax({
+             
+             url:"../php/LoginValidate.php",
+             method:"POST",
+ 
+             data:{"password":password,"email":email},
+             dataType:"JSON",
+             
+             success:function(data)
+             {
+               console.log("Ajax Response Is Recieved ......")
+               if(data.result ==="yes")
+               {
+                //var link = $('.usersPageLoader : first');
+                //link.click();
+                $("#notify").text("Registration Succeed.......");
+                $("#notify").css("color" ,"#006699");
+                console.log('ajax message Recieved .... Yes');
+                //$("#generalemail").text(email);
+                //$("#generalpassword").text(password);
+               // $("#submitt").click();
+
+               }
+               else{
+                 console.log('ajax message recieved ...........   No ');
+                 $("#notify").text("Registration Failed.......");
+                 $("#notify").css("color" , "ff0000");
+               }
+ 
+             },
+             error:function(){
+               console.log("Error");
+             }
+           }
+         )
+  }
+</script>
+<body>
+  
+<!-- ---------------------------------------------------------------------------------------------------------- -->
+<form style="display:none" method="post" action="MainDating.php">
+    <input name="email"  id="generalemail" type="email">
+    <input name="password"  id="generalpassword" type="password">
+    <input type="submit" id="submitt">
+  </form>
+  
+  <!-- ---------------------------------------------------------------------------------------------------------- -->
+  
+	<nav>
+      <div id="nav" style="padding-top:0px; padding-bottom:0px">
+          
+          <ul style="width:85%" >
+            <li ><a  href= "main.html">Main</a></li>
+            <li ><a href= "dating.html">Home</a></li>
+            <li ><a  href= "login.html">login</a></li>
+            <li ><a class="active" href= "registor.html">Registor</a></li>
+          </ul>
+      </div>
+      
+  </nav>
+<div id="sexy">
+ <img src="../images/ring3.jpg" width="60" height="60"> <h1>be my sexy</h1><p>date</p>
+
+</div>
+<div id="container">
+      
+
+      <img class =  "slider" src="../images/ppp8.jpeg">
+      </div>
+
+      <section class="box">
+ 
+  
+  
+</section>
+<section class="log">
+  <div id="lo">
+    <h1>Registor</h1>
+    
+
+  </div>
+  
+
+  <div id="name">
+    <label for="username">username</label><br>
+    <input type="text" id="username" class="username" name="username" required="">
+
+    <label for="firstname">first name</label><br>
+    <input type="text" id="fname" class="firstname" name="firstname" required="">
+
+
+    <label for="lastname">last name</label><br>
+    <input type="text" id="fname" class="lastname" name="lastname" required="">
+
+    <label for="Age">Age</label><br>
+    <input type="number" class="age" id="Age" class="age" name="Age" required=""><br>
+
+    <label for="Sex">Sex</label><br>
+     <select id="Sex" class="sex" name="Sex">
+      <option value="M">Male</option>
+      <option value="F">Female</option>
+    </select>
+
+
+
+    <label for="Country">Country</label><br>
+    <!--<input type="text" id="Country" name="Country">-->
+      <select id="Country" class="country" name="Country">
+      <option value="Ethiopia">Ethiopia</option>
+      <option value="Eritra">Eritra</option>
+      <option value="Indea">Indea</option>
+      <option value="china">china</option>
+      <option value="usa">usa</option>
+      <option value="Australia">Australia</option>
+      <option value="Coria">Coria</option>
+      <option value="Gana">Gana</option>
+      <option value="Uganda">Uganda</option>
+      <option value="jida">jida</option>
+      <option value="nayirobi">nayirobi</option>
+      <option value="sudan">sudan</option>
+      <option value="nigeria">nigeria</option>
+      <option value="America">America</option>
+      <option value="soria">soria</option>
+      <option value="germen">germen</option>
+      <option value="Iran">Iran</option>
+      <option value="North koria">North koria</option>
+      <option value="South koria">South koria</option>
+      <option value="Japan">Japan</option>
+      <option value="Esrael">Esrael</option>
+    </select>
+
+
+
+
+
+
+     <label for="State">State</label><br>
+    <input type="text" id="State"   class="state" name="State">
+
+
+     <label for="Religion">Religion</label><br>
+    <input type="text" id="Religion" class="religion" name="Religion">
+
+
+
+    
+    
+
+
+
+
+    <label for="password">password</label><br>
+    <input type="password" id="lname"  class="password" lname="password" required="">
+
+
+    <label for="confirm">confirm password</label><br>
+    <input type="password" id="lname" class="confirm" name="confirmpassword" required="">
+
+    <label for="email">email</label><br>
+    <input type="text" id="lname" class="email" name="email" required="">
+
+
+     <label for="phonenumber">Phone Number</label><br>
+    <input type="text" id="phonenumber" class="phoneno" name="phonenumber" required="">
+
+
+
+
+<!-- <form method="post" enctype="multipart/form-data" id="image_upload_form" action="submit_image.php"> -->
+<input type="file" name="images" id="images" multiple accept="image/x-png, image/gif, image/jpeg, image/jpg" />
+
+    <label for="Biography">Biography</label><br>
+    <input type="text" id="Biography"   class="biography" name="Biography" required="">
+
+    <!----<input type="Submit" name="submit">----->
+
+
+    <button id="submitting" >Submit</button>
+    
+<p id="notify"></p>
+
+  </div>
+<!-- </form> -->
+  
+
+
+</section>
+<section class="log2">
+  <div id="lo">
+    <h1>Login</h1>
+    
+
+  </div>
+  <!-- <form> -->
+
+  <div id="name">
+   <label for="username">Email</label><br>
+    <input type="text" id="fname username" class="inputemail" name="username">
+
+    <label for="password">password</label><br>
+    <input type="password" id="lname password" class="inputpassword" name="password"><br>
+
+    <input type = "checkbox"/>Remember me<br>
+
+
+
+    <button onclick="logIn()">login</button>
+    <p>forgot password</p>
+
+
+  </div>
+<!-- </form> -->
+  
+  </section>
+  <div class="footer">
+   <div class="cont">
+     <div class="btn"><i class="fas fa-map-marker-alt"></i>  Ethiopia , Addis Abeba</div>
+     <div class="btn"><i class="fas fa-phone"></i>   +251117689</div>
+     <div class="btn"><i class="far fa-envelope"></i>   Afalagi@company.com </div>
+ 
+
+    <div class = "rightside">
+      <div id = "title"><h2>About the company</h2> </div>
+      <div id = "paragraph">our company is currently working on finding<br>
+                      some one</div>
+         <div class="icons">
+          <div class="icon"><i class="fab fa-facebook"></i></div>
+          <div class="icon"><i class="fab fa-twitter-square"></i></div>
+          <div class="icon"><i class="fab fa-instagram"></i></div>
+          <div class="icon"><i  class="fab fa-viber"></i></div>
+          
+
+
+         </div>
+     </div>
+
+  
+</div>
+
+
+
+
+</body>
+</html>

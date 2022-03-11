@@ -1,0 +1,111 @@
+
+nav ul>li{
+	display: inline; 
+
+}
+
+nav ul a{
+	padding: 1rem;
+	color: black; 
+	text-decoration: none; 
+}
+nav ul a.active,nav ul a:active{
+	border-bottom: 2px solid blue;
+	background: rgba(0,0,0,.05);  
+}
+nav ul a:hover{
+	background: rgba(0,0,0,.1); 
+}
+
+nav>#nav{
+	padding: 1rem;
+	background: white; 
+	
+	margin: 0px; 
+}
+nav>#nav ul{
+	text-align: right;
+	display: inline-block; 
+}
+#sexy img{
+	position: absolute;
+	top: 2%;
+	left: 4%;
+}
+#sexy h1{
+	position: absolute;
+	left: 10%;
+	top: 0;
+	font-family: Ranga, cursive;
+}
+#sexy p{
+	position: absolute;
+	top: 1%;
+	left: 13%;
+	font-size: 45px;
+	color: red;
+	font-family: Ranga, cursive;
+
+}
+#container img{
+	position: absolute;
+	top: 17%;
+	width: 99%;
+	height: 60%;
+}
+.container{
+	position: absolute;
+	top: 550px;
+	left: 60px;
+}
+.footer {
+	position: absolute;
+	top: 250%;
+   
+  
+   width: 99%;
+   height: 30%;
+   background-color:#383838 ;
+   color: white;
+   
+  }
+  .cont{
+	position: absolute;
+	left: 20%;
+	
+	
+	
+}
+.btn{
+    
+    
+	padding:10px;
+
+	color: white;
+	padding-top:5;
+
+
+}
+.rightside{
+	color: white;
+	width: 100%;
+    margin-top: -130px;
+    margin-left:350px;
+	
+
+
+}
+.icon{
+    
+    float:left;
+	padding:20px;
+	text-align: center;
+	color: white;
+	padding-top:5;
+
+}
+.rightside#title{
+	text-decoration-color: white;
+
+
+}

@@ -1,0 +1,185 @@
+
+nav ul>li{
+	display: inline; 
+
+}
+
+nav ul a{
+	padding: 1rem;
+	color: black; 
+	text-decoration: none; 
+}
+nav ul a.active,nav ul a:active{
+	border-bottom: 2px solid blue;
+	background: rgba(0,0,0,.05);  
+}
+nav ul a:hover{
+	background: rgba(0,0,0,.1); 
+}
+
+nav>#nav{
+	padding: 1rem;
+	background: white; 
+	
+	margin: 0px; 
+}
+nav>#nav ul{
+	text-align: right;
+	display: inline-block; 
+}
+#sexy img{
+	position: absolute;
+	top: 2%;
+	left: 4%;
+}
+#sexy h1{
+	position: absolute;
+	left: 10%;
+	top: 0;
+	font-family: Ranga, cursive;
+}
+#sexy p{
+	position: absolute;
+	top: 1%;
+	left: 13%;
+	font-size: 45px;
+	color: red;
+	font-family: Ranga, cursive;
+
+}
+#container img{
+	position: absolute;
+	top: 17%;
+	width: 99%;
+	height: 60%;
+}
+.box{
+    position: absolute;
+	top: 77.1%;
+	
+	background-color: #e0e0d1;
+	height: 125%;
+	width: 99%;
+	
+	
+
+	
+}
+.log{
+	position: absolute;
+	top: 60%;
+	background-color: white;
+	width: 85%;
+	left: 8%;
+	height: 95%;
+}
+.log #lo h1{
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	color: blue;
+	font-size: 170%;
+
+
+
+
+
+}
+.log #name{
+	position: absolute;
+	top: 20%;
+	left: 1%;
+	padding: 40px;
+
+
+
+
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    
+    border-radius: 4px;
+    box-sizing: border-box;
+    background:  #f5f5f0;
+}
+input[type=password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    
+   
+    box-sizing: border-box;
+    background:  #f5f5f0;
+}
+button{
+	 width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #ff3385;
+
+}
+.log img{
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	top: 0%;
+}
+.footer {
+	position: absolute;
+	top: 200%;
+   
+  
+   width: 99%;
+   height: 30%;
+   background-color:#383838 ;
+   color: white;
+   
+  }
+  .cont{
+	position: absolute;
+	left: 20%;
+	
+	
+	
+}
+.btn{
+    
+    
+	padding:10px;
+
+	color: white;
+	padding-top:5;
+
+
+}
+.rightside{
+	color: white;
+	width: 100%;
+    margin-top: -130px;
+    margin-left:350px;
+	
+
+
+}
+.icon{
+    
+    float:left;
+	padding:20px;
+	text-align: center;
+	color: white;
+	padding-top:5;
+
+}
+.rightside#title{
+	text-decoration-color: white;
+
+
+}
